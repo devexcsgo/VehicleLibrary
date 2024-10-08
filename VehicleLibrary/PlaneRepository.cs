@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehicleLibrary
 {
-    internal class PlaneRepository : IVehicleRepository<Plane>
+    internal class PlaneRepository /*: IVehicleRepository<Plane>*/
     {
         private int nextId = 1;
         private List<Plane> planes = new List<Plane>();

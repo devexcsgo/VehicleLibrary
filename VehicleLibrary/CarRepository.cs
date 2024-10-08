@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehicleLibrary
 {
-    public class CarRepository : IVehicleRepository<Car>
+    public class CarRepository /*: IVehicleRepository<Car>*/
     {
         private int nextId = 1;
         private List<Car> cars = new List<Car>();

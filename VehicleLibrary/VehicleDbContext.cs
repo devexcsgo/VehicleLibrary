@@ -10,7 +10,7 @@ namespace VehicleLibrary
 {
     public class VehicleDbContext : DbContext
     {
-        public VehicleDbContext(DbContextOptions<VehicleDbContext> options) : base(options)  {  }
+        public VehicleDbContext(DbContextOptions<VehicleDbContext> options) : base(options) { }
 
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Car> Cars { get; set; }
@@ -19,7 +19,7 @@ namespace VehicleLibrary
         {
             optionsBuilder.UseSqlServer("Data Source=mssql4.unoeuro.com;Initial Catalog=silasstilling_dk_db_gproser;Persist Security Info=True;User ID=silasstilling_dk;Password=cxenHybp2DFGf9Rtz6aw;TrustServerCertificate=True");
         }
+
     }
-
-
 }
+

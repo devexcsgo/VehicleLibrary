@@ -73,7 +73,7 @@ namespace VehicleLibrary
 
         public void ValidateCar()
         {
-            base.Validate();
+            Validate();
             ValidateMilage();
             ValidateColor();
             ValidateFuelType();
